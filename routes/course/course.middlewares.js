@@ -9,7 +9,7 @@ const validator = [
         .not()
         .isEmpty()
         .withMessage('กรุณาระบุ บอกรายละเอียด'),
-    check('id_teacher')
+    check('teacher_id')
         .not()
         .isEmpty()
         .withMessage('กรุณาระบุ อาจารย์ประจำคอส'),

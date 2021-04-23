@@ -20,7 +20,7 @@ const create = async (req, res, next) => {
             course_name: req.body.course_name,
             course_description: req.body.course_description,
             majer: req.body.majer,
-            id_teacher: req.body.id_teacher,
+            teacher_id: req.body.teacher_id,
         }
         const course = await service.save(data);
         return res.status(201).json({ data: course });

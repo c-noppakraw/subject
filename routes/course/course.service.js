@@ -17,7 +17,7 @@ const save = async (data) => {
             course_name: data.course_name,
             course_description: data.course_description,
             majer: data.majer,
-            TeacherIdTeacher: data.id_teacher,
+            TeacherIdTeacher: data.teacher_id,
             createdAt: day,
             updatedAt: day
         });

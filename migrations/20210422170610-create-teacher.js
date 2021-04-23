@@ -25,10 +25,6 @@ module.exports = {
       gender: {
         type: Sequelize.STRING,
         allowNull: false,
-      },
-      date_created: {
-        allowNull: false,
-        type: Sequelize.DATE
       }
     });
   },
