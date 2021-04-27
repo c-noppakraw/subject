@@ -17,7 +17,7 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.TEXT,
       allowNull: false
     },
-    majer: {
+    major: {
       type: DataTypes.STRING,
       allowNull: false
     }

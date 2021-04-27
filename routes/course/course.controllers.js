@@ -2,7 +2,7 @@ const express = require('express');
 const { validationResult } = require('express-validator');
 const service = require('./course.service');
 
-const setCourse = async (req, res, next) => {
+const courseAll = async (req, res, next) => {
     try {
         const course = await service.getAll();
         return res.status(200).json({ data: course });
@@ -19,7 +19,7 @@ const create = async (req, res, next) => {
         const data = {
             course_name: req.body.course_name,
             course_description: req.body.course_description,
-            majer: req.body.majer,
+            major: req.body.major,
             teacher_id: req.body.teacher_id,
         }
         const course = await service.save(data);
@@ -29,4 +29,4 @@ const create = async (req, res, next) => {
     }
 };
 
-module.exports = { setCourse, create };
+module.exports = { courseAll, create };

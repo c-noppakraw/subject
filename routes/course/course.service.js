@@ -1,5 +1,4 @@
 const { Course } = require('../../models');
-const dayjs = require('dayjs');
 
 const getAll = async () => {
     try {
@@ -12,14 +11,11 @@ const getAll = async () => {
 
 const save = async (data) => {
     try {
-        let day = dayjs().format();
         const course = await Course.create({
             course_name: data.course_name,
             course_description: data.course_description,
-            majer: data.majer,
+            major: data.major,
             TeacherIdTeacher: data.teacher_id,
-            createdAt: day,
-            updatedAt: day
         });
         return course;
     } catch (error) {

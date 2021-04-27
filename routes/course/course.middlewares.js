@@ -13,7 +13,7 @@ const validator = [
         .not()
         .isEmpty()
         .withMessage('กรุณาระบุ อาจารย์ประจำคอส'),
-    check('majer')
+    check('major')
         .not()
         .isEmpty()
         .withMessage('กรุณาระบุ หลักสูตร'),

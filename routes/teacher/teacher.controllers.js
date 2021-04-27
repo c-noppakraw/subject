@@ -2,7 +2,7 @@ const express = require('express');
 const { validationResult } = require('express-validator');
 const service = require('./teacher.service');
 
-const setTeacher = async (req, res, next) => {
+const teacherAll = async (req, res, next) => {
     try {
         const teacher = await service.getAll();
         return res.status(200).json({ data: teacher });
@@ -29,4 +29,4 @@ const create = async (req, res, next) => {
     }
 };
 
-module.exports = { setTeacher, create };
+module.exports = { teacherAll, create };

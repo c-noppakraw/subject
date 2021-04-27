@@ -3,7 +3,7 @@
     "username": "postgres",
     "password": "CGAME260114",
     "database": "SubjectDB",
-    "host": "localhost",
+    "host": "postgis",
     "dialect": "postgres"
   },
   "test": {

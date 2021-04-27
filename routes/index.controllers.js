@@ -1,7 +1,7 @@
 const express = require('express');
 const service = require('./index.service');
 
-const setSubject = async (req, res, next) => {
+const subjectAll = async (req, res, next) => {
     try {
         const subject = await service.getAll();
         return res.status(200).json({ data: subject });
@@ -10,4 +10,4 @@ const setSubject = async (req, res, next) => {
     }
 }
 
-module.exports = { setSubject };
+module.exports = { subjectAll };
